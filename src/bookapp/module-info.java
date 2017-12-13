@@ -4,4 +4,10 @@ module bookapp {
     requires spring.context;
     requires javax.inject;
     requires spring.tx;
+
+    opens books.impl.entities;
+    opens books.impl.service;
+    opens bookstore.impl.service;
+    opens books.api.service;
+    opens books.api.entities;
 }
