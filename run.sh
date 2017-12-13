@@ -3,4 +3,4 @@ CLASSPATH=lib/antlr-2.7.7.jar:lib/cdi-api-1.1.jar:lib/classmate-1.3.0.jar:lib/co
 
 /Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/bin/javac -cp $CLASSPATH --module-path mods -d out --module-source-path src --add-modules java.naming -m bookapp
 cp $(find src -name '*.xml') out/bookapp
-/Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/bin/java  -cp $CLASSPATH --module-path mods:out --add-modules java.xml.bind -m bookapp/main.Main
+/Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/bin/java  -cp $CLASSPATH --module-path mods:out --add-modules java.xml.bind,java.sql -m bookapp/main.Main
